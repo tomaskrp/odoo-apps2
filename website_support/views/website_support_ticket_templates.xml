@@ -402,7 +402,7 @@
              <!--<li><a href="#" data-action="new_help_page"><i class="fa fa-info-circle"/><p>New Help Page</p></a></li>-->
             <!--<li groups="website.group_website_designer"><a href="#" data-action="new_blog_post"><i class="fa fa-rss"/><p>New Blog Post</p></a></li>-->
         <!--</xpath>-->
-        <xpath expr="//div[@name='module_website_blog']" position="after">
+        <xpath expr="//div[@id='o_new_content_menu_choices']//div[@class='row']" position="inside">
             <div name="module_website_support_help_groups" t-att-data-module-id="env.ref('base.module_website_support_help_groups').id" t-att-data-module-shortdesc="env.ref('base.module_website_support_help_groups').shortdesc" class="col-md-4 mb8 o_new_content_element">
                 <a href="#" data-action="new_help_group">
                     <i class="fa fa-question-circle"/>

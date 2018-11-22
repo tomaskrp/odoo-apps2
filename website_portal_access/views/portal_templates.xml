@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  © 2018 (Tomas Karpovic)
+  License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+<data>
+<template id="portal_my_home" inherit_id="portal.portal_my_home">
+    <xpath expr="//div[hasclass('o_portal_my_home')]" position="attributes">
+        <attribute name="t-if">show_your_documents</attribute>
+    </xpath>
+</template>
+</data>
+</odoo>
+

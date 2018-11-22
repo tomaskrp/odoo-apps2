@@ -660,4 +660,8 @@
 
   </template>
 
+  <template id="brand_promotion" inherit_id="website.brand_promotion">
+    <xpath expr="//div[@class='o_brand_promotion']" position="replace"/>
+  </template>
+
 </odoo>

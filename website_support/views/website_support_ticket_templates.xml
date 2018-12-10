@@ -369,18 +369,18 @@
 
                 </div>
 
-                <div class="mt16 mb16 col-md-12 float-left">
+                <div class="mt64 mb16 col-md-12 float-left">
                     <t t-foreach="help_groups" t-as="help_group">
                         <div class="col-md-4 float-left">
                             <t t-if="help_group.image">
                                 <img class="img-rounded img-responsive" t-att-src="website.image_url(help_group, 'image')"/>
                             </t>
-                            <h2 class="support-help-group" style="color: inherit;" t-field="help_group.name"></h2>
+                            <h2 class="support-help-group" style="color: inherit; font-size: 25px;" t-field="help_group.name"></h2>
                             <t t-set="counter" t-value="0"/>
                             <t t-foreach="help_group.page_ids" t-as="help_page">
                                 <t t-if="help_page.website_published">
                                     <t t-if="counter &lt; 5">
-                                        <h3 class="mt8 mb8 support-help-page"><a t-attf-href="/support/help/#{slug(help_group)}/#{slug(help_page)}" t-field="help_page.name"></a></h3>
+					    <h3 class="mt8 mb8 support-help-page" style="font-size: 20px;"><a t-attf-href="/support/help/#{slug(help_group)}/#{slug(help_page)}" t-field="help_page.name"></a></h3>
                                     </t>
                                     <t t-set="counter" t-value="counter + 1"/>
                                 </t>
